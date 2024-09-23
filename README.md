@@ -47,25 +47,26 @@ This project is an internal wallet transaction system that allows users to perfo
 ## API Endpoints
 
   1. User Authentication
-  - POST /login
-  Enter email and password to log in.
+    - POST /login
+    Enter email and password to log in.
 
   2. Wallet Operations
-  - GET /wallets/
-  Retrieve wallet information by ID.
+    - GET /wallets/
+    Retrieve wallet information by ID.
 
-  - POST /transactions
-  Create a new transaction (deposit or withdraw).
-    Request Body :
+  3. Transactions
+    - POST /transactions
+      Create a new transaction (deposit or withdraw).
+      - Request Body :
 
-    ```json
-    {
-      "amount": 100.00,
-      "transaction_type": "credit", // or "debit"
-      "source_wallet_id": 1,
-      "target_wallet_id": 2
-    }
-    ```
+      ```json
+      {
+        "amount": 100.00,
+        "transaction_type": "credit", // or "debit"
+        "source_wallet_id": 1,
+        "target_wallet_id": 2
+      }
+      ```
 
 ## Stock Price API
   - GET /stock_prices
