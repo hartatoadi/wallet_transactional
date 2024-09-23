@@ -30,16 +30,19 @@ This project is an internal wallet transaction system that allows users to perfo
 
   ```bash
   bundle install
+  ```
 
 3. **Run database migrations:**
 
   ```bash
   rails db:migrate
+  ```
 
 4. **Start the server:**
 
   ```bash
   rails server
+  ```
 
 ## API Endpoints
 
@@ -62,6 +65,7 @@ This project is an internal wallet transaction system that allows users to perfo
       "source_wallet_id": 1,
       "target_wallet_id": 2
     }
+    ```
 
 ## Stock Price API
   - GET /stock_prices
