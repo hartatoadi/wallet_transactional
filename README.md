@@ -46,11 +46,11 @@ This project is an internal wallet transaction system that allows users to perfo
 
 ## API Endpoints
 
-  ## User Authentication
+  1. User Authentication
   - POST /login
   Enter email and password to log in.
 
-  ## Wallet Operations
+  2. Wallet Operations
   - GET /wallets/
   Retrieve wallet information by ID.
 
